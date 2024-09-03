@@ -1,0 +1,75 @@
+.select-shift-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    max-width: 500px;
+    margin: auto;
+}
+
+.select-shift-notification {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.shift-select {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.selected-shift-list {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.selected-shift-heading {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.selected-shift-display {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selected-shift-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 5px;
+}
+
+.selected-shift-name {
+    font-size: 1rem;
+    color: #333;
+}
+
+.remove-shift-button {
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #dc3545;
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.remove-shift-button:hover {
+    background-color: #e2e6ea;
+    color: #bd2130;
+}

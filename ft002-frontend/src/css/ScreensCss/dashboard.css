@@ -1,0 +1,74 @@
+.dashboard-container {
+    padding: 20px;
+  }
+  
+  .dashboard-header {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .dashboard-column {
+    padding: 10px;
+  }
+  
+  .dashboard-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  /* This keeps the aspect ratio of cards to be 1:1 making them square */
+  .dashboard-card::before {
+    content: "";
+    float: left;
+    padding-top: 100%;
+  }
+  
+  .dashboard-card-body {
+    position: absolute;
+    width: 100%;
+  }
+  
+  /* Clear float */
+  .dashboard-card::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .dashboard-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Ensure cards are square and responsive */
+  @media (min-width: 992px) {
+    .dashboard-column {
+      max-width: calc(33.3333% - 20px);
+      flex: 0 0 calc(33.3333% - 20px);
+    }
+  }
+  
+  @media (max-width: 991px) and (min-width: 768px) {
+    .dashboard-column {
+      max-width: calc(50% - 20px);
+      flex: 0 0 calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .dashboard-column {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+  
+  /* Add or modify styles as necessary to match your design */
+  

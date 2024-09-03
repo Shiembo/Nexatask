@@ -1,0 +1,83 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures the border-radius applies */
+}
+
+th, td {
+  padding: 12px; /* More padding for a spacious look */
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Border for each cell */
+}
+
+th {
+  background-color: #007bff; /* Darker shade for headers */
+  color: black; /* Changed to black for visibility */
+  font-size: 16px; /* Slightly larger font for headers */
+  font-weight: bold; /* Making text bold for better visibility */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e9ecef; /* Hover effect for rows */
+}
+
+/* Additional styling for buttons inside the table */
+.edit-button, .delete-button, .book-shift-button {
+  border-radius: 4px; /* Rounded corners */
+  margin-right: 5px; /* Space between buttons */
+  padding: 5px 10px; /* Padding inside buttons */
+  font-size: 14px; /* Font size */
+  transition: background-color 0.2s; /* Smooth transition for hover effect */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.book-shift-button {
+  background-color: #35dc5f;
+  color: white;
+}
+
+.book-shift-button:hover {
+  background-color: #44c823;
+}
+
+.searchBar {
+  width: 100%; /* Full width to accommodate various screen sizes */
+  padding: 10px 15px; /* Comfortable padding */
+  margin-bottom: 20px; /* Spacing between the search bar and the table */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 20px; /* Rounded corners for a modern look */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  outline: none; /* Remove outline to enhance appearance */
+  font-size: 16px; /* Readable font size */
+  color: #333; /* Dark color for the text */
+}
+
+.searchBar:focus {
+  border-color: #007bff; /* Highlight color when focused */
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.25); /* Enhanced shadow on focus */
+}
+

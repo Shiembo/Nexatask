@@ -1,0 +1,19 @@
+/* App.css */
+.app-body {
+    display: flex; /* Use flexbox to layout sidebar and main content */
+  }
+  
+  /* Assuming your sidebar and main content are direct children of .app-body */
+  .side-nav-bar {
+    /* Sidebar styles, make sure it doesn't flex-grow */
+    flex: 0 0 250px; /* Adjust the width of the sidebar as necessary */
+    height: 100vh; /* Full height */
+    /* ... other styles ... */
+  }
+  
+  main.py-3 {
+    /* Main content styles */
+    flex-grow: 1; /* Allow main content to take up remaining space */
+    /* ... other styles ... */
+  }
+  

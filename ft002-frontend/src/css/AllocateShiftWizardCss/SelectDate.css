@@ -1,0 +1,85 @@
+.select-date-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.select-date-header {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.select-date-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-datepicker {
+    font-size: 0.9rem;
+    border: none;
+}
+
+.react-datepicker__day--selected {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+.react-datepicker__day--today {
+    font-weight: bold;
+}
+
+.react-datepicker__current-month {
+    font-size: 1.1rem;
+}
+
+.time-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.time-display-header {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.time-display-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Additional styles */
+/* ... */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .select-date-content {
+        flex-direction: column;
+    }
+
+    .time-display {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}

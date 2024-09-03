@@ -1,0 +1,75 @@
+.select-staff-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    max-width: 500px;
+    margin: auto;
+}
+
+.select-staff-notification {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.staff-select {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.selected-staff-list {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.selected-staff-heading {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.selected-staff-display {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selected-staff-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 5px;
+}
+
+.selected-staff-name {
+    font-size: 1rem;
+    color: #333;
+}
+
+.remove-staff-button {
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #dc3545; /* Use a color that indicates a remove action */
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.remove-staff-button:hover {
+    background-color: #e2e6ea;
+    color: #bd2130;
+}

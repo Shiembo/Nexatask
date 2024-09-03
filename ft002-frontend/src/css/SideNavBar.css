@@ -1,0 +1,114 @@
+/* Sidebar container */
+.side-nav-bar {
+  width: 250px; /* Width of the expanded sidebar */
+  background-color: #f0f0f0;
+  height: 100vh; /* Full height */
+  position: fixed;
+  top: 60px; /* Below the top navbar */
+  left: 0;
+  transition: width 0.3s ease;
+  overflow-x: hidden;
+  z-index: 1000; /* Ensure the sidebar is above other content */
+}
+
+/* Collapsed sidebar styling */
+.side-nav-bar.collapsed {
+  width: 70px; /* Width of the collapsed sidebar */
+}
+
+/* Style for each menu item in the sidebar */
+.menu-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect for menu items */
+.menu-item:hover {
+  background-color: #e7e7e7;
+}
+
+
+
+/* Icon styling in the sidebar */
+.icon {
+  margin-right: 10px;
+  /* Default icon color, you can change it to anything you like */
+  color: #555;
+}
+
+/* Unique icon colors */
+.icon-home { color: #3498db; }
+.icon-user { color: #e74c3c; }
+.icon-clock { color: #f1c40f; }
+.icon-calendar-alt { color: #2ecc71; }
+.icon-calendar-plus { color: #9b59b6; }
+.icon-tasks { color: #7d518a; }
+.icon-stopwatch { color: #1abc9c; }
+.icon-user-plus { color: #d35400; }
+.icon-users { color: #8e44ad; }
+.icon-arrow-left { color: #bdc3c7; }
+.icon-bars { color: #7f8c8d; }
+.icon-calendar-day { color: #2776ae; }
+
+/* Icon styling in the sidebar */
+.icon {
+  margin-right: 10px;
+}
+
+/* Title styling in the sidebar */
+.title {
+  flex-grow: 1;
+  white-space: nowrap;
+}
+
+/* Hide titles in the collapsed sidebar state */
+.side-nav-bar.collapsed .title {
+  display: none;
+}
+
+/* Toggle button styling */
+.toggle-btn {
+  position: absolute;
+  top: 10px; /* Positioned at the top inside the sidebar */
+  right: 10px; /* Positioned to the right for easy access */
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Adjust the main content area when the sidebar is expanded */
+.app-content {
+  margin-left: 250px; /* Space for the expanded sidebar */
+}
+
+/* Adjust the main content area when the sidebar is collapsed */
+.side-nav-bar.collapsed + .app-content {
+  margin-left: 70px; /* Space for the collapsed sidebar */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .side-nav-bar {
+    top: 60px; /* Ensure the sidebar starts below the top navbar */
+    width: 100%; /* Full width sidebar for mobile devices */
+  }
+
+  .side-nav-bar.collapsed {
+    width: 100%; /* Full width collapsed sidebar for mobile devices */
+  }
+
+  .side-nav-bar.collapsed + .app-content {
+    margin-left: 0; /* No margin needed for collapsed sidebar on mobile */
+  }
+
+  /* Adjust the toggle button for mobile devices */
+  .toggle-btn {
+    top: 10px; /* Position it inside the sidebar at the top */
+  }
+}

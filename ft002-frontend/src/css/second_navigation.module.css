@@ -1,0 +1,180 @@
+.second_nav {
+    height: 35px;
+
+    background-color: #f1f5f8;
+
+    
+    border: 1px solid #e6e9ea;
+
+    padding-left: 3px;
+
+    box-shadow: 0px 2px 4px 0px rgba(21, 21, 21, 0.2);
+
+    position: relative;
+    z-index: 2;
+
+}
+
+
+
+.md_dropdown {
+    position: relative;
+    display: inline-block;
+
+    height: 35px;
+}
+
+.md_drop_btn {
+
+    border: none;
+
+    font-family: titillium_web_regular;
+    font-size: 16px;
+
+    height: 35px;
+
+    margin-left: 10px;
+    margin-right: 3px;
+
+    background: none;
+
+    cursor: pointer;
+    
+  }
+
+
+  
+
+.md_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+
+    border: 1px solid #e6e6e6;
+    font-family: titillium_web_regular;
+
+    border-radius: 12px;
+
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+
+    width: 180px;
+
+
+
+}
+  
+
+
+.md_dropdown:hover .md_dropdown_content {display: block;}
+
+
+
+
+
+.chevron_down_2 {
+    color: black;
+}
+
+.chevron_down {
+    color: white;
+}
+
+
+
+
+
+.dropdown_popup_btn_01 {
+    font-family: titillium_web_regular;
+    font-size: 16px;
+
+
+    width: 180px;
+
+    padding: 10px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+
+    border: none;
+    background: none;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown_popup_btn_01:hover {background-color: #f7f7f7;}
+
+
+
+
+
+
+
+
+.search_input {
+    border: 1px solid #86868b;
+    border-radius: 12px;
+
+    margin-left: 20px;
+
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+ 
+    color: #494949;
+
+    width: 200px;
+
+    margin-top: 1px;
+
+    margin-right: 25px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: titillium_web_regular;
+    src: url(../fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: titillium_web_light;
+    src: url(../fonts/Titillium_Web/TitilliumWeb-Light.ttf);
+}
+
+@font-face {
+    font-family: titillium_web_bold;
+    src: url(../fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
